@@ -59,7 +59,7 @@
 
 10. Using the Minecraft Launcher, launch the 1.12.2 Forge version of minecraft. 
 
-# Start Pycraft
+# Start Pycrafty
 First, install node.js on your system. You can download it at: https://nodejs.org/en/
 
 To verify node is properly installed open up a terminal and type:
@@ -68,16 +68,16 @@ node -v
 ```
 You should see a version number displayed in the terminal.
 
-Run ```npm install``` from the folder which holds the Pycraft code.
+Run ```npm install``` from the folder which holds the Pycrafty code.
 This will install any dependencies for the server on the machine.
 
-Next, start a server for Pycraft by running the command
+Next, start a server for Pycrafty by running the command
 ```
 node bin\www
 ```
 in the project root directory.
 
-Then to launch the Pycraft application go to the address localhost:3000 in a web browser.
+Then to launch the Pycrafty application go to the address localhost:3000 in a web browser.
 You should now see the full work environment.
 
 # Create a script:

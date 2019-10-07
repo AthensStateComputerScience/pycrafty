@@ -1,0 +1,504 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Picrafty API</title>
+
+    <style>
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .cd {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all_nosearch.js"></script>
+  </head>
+
+  <body class="index" data-languages="[]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar.png" alt="Navbar" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo.png" class="logo" alt="Logo" />
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#menu-bar" class="toc-h2 toc-link" data-title="Menu bar">Menu bar</a>
+                  </li>
+                  <li>
+                    <a href="#create-script" class="toc-h2 toc-link" data-title="Create Script">Create Script</a>
+                  </li>
+                  <li>
+                    <a href="#view-your-code" class="toc-h2 toc-link" data-title="View your Code">View your Code</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+          </li>
+          <li>
+            <a href="#minecraft" class="toc-h1 toc-link" data-title="Minecraft">Minecraft</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-block" class="toc-h2 toc-link" data-title="Get Block">Get Block</a>
+                  </li>
+                  <li>
+                    <a href="#get-blocks" class="toc-h2 toc-link" data-title="Get Blocks">Get Blocks</a>
+                  </li>
+                  <li>
+                    <a href="#get-block-type-and-id" class="toc-h2 toc-link" data-title="Get Block Type and ID">Get Block Type and ID</a>
+                  </li>
+                  <li>
+                    <a href="#set-block" class="toc-h2 toc-link" data-title="Set Block">Set Block</a>
+                  </li>
+                  <li>
+                    <a href="#set-blocks" class="toc-h2 toc-link" data-title="Set Blocks">Set Blocks</a>
+                  </li>
+                  <li>
+                    <a href="#get-height" class="toc-h2 toc-link" data-title="Get Height">Get Height</a>
+                  </li>
+                  <li>
+                    <a href="#get-player-entity-ids" class="toc-h2 toc-link" data-title="Get Player Entity IDs">Get Player Entity IDs</a>
+                  </li>
+                  <li>
+                    <a href="#get-player-id" class="toc-h2 toc-link" data-title="Get Player ID">Get Player ID</a>
+                  </li>
+                  <li>
+                    <a href="#post-to-chat" class="toc-h2 toc-link" data-title="Post to Chat">Post to Chat</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#player" class="toc-h1 toc-link" data-title="Player">Player</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-player-39-s-position" class="toc-h2 toc-link" data-title="Get Player's Position">Get Player's Position</a>
+                  </li>
+                  <li>
+                    <a href="#set-player-39-s-position" class="toc-h2 toc-link" data-title="Set Player's Position">Set Player's Position</a>
+                  </li>
+                  <li>
+                    <a href="#get-tile-position" class="toc-h2 toc-link" data-title="Get Tile Position">Get Tile Position</a>
+                  </li>
+                  <li>
+                    <a href="#set-tile-position" class="toc-h2 toc-link" data-title="Set Tile Position">Set Tile Position</a>
+                  </li>
+                  <li>
+                    <a href="#get-player-39-s-rotation" class="toc-h2 toc-link" data-title="Get Player's Rotation">Get Player's Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#get-player-39-s-pitch" class="toc-h2 toc-link" data-title="Get Player's Pitch">Get Player's Pitch</a>
+                  </li>
+                  <li>
+                    <a href="#get-player-39-s-direction" class="toc-h2 toc-link" data-title="Get Player's Direction">Get Player's Direction</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#position" class="toc-h1 toc-link" data-title="Position">Position</a>
+          </li>
+          <li>
+            <a href="#entity" class="toc-h1 toc-link" data-title="Entity">Entity</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#get-entity-39-s-position" class="toc-h2 toc-link" data-title="Get Entity's Position">Get Entity's Position</a>
+                  </li>
+                  <li>
+                    <a href="#set-entity-39-s-position" class="toc-h2 toc-link" data-title="Set Entity's Position">Set Entity's Position</a>
+                  </li>
+                  <li>
+                    <a href="#get-position-of-tile-underneath-entity" class="toc-h2 toc-link" data-title="Get Position of Tile Underneath Entity">Get Position of Tile Underneath Entity</a>
+                  </li>
+                  <li>
+                    <a href="#set-new-position-underneath-entity" class="toc-h2 toc-link" data-title="Set New Position Underneath Entity">Set New Position Underneath Entity</a>
+                  </li>
+                  <li>
+                    <a href="#get-entity-39-s-rotation" class="toc-h2 toc-link" data-title="Get Entity's Rotation">Get Entity's Rotation</a>
+                  </li>
+                  <li>
+                    <a href="#get-entity-39-s-pitch" class="toc-h2 toc-link" data-title="Get Entity's Pitch">Get Entity's Pitch</a>
+                  </li>
+                  <li>
+                    <a href="#get-entity-39-s-direction" class="toc-h2 toc-link" data-title="Get Entity's Direction">Get Entity's Direction</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#block" class="toc-h1 toc-link" data-title="Block">Block</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#modify-block" class="toc-h2 toc-link" data-title="Modify Block">Modify Block</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='getting-started'>Getting Started</h1><h2 id='menu-bar'>Menu bar</h2><h3 id='create-your-own-script'>Create your own Script</h3>
+<p><strong>File Name</strong>: Enter the name of your script. </p>
+
+<p><strong>Naming Exceptions</strong>: Cannot contain the following characters: </p>
+
+<ul>
+<li><p>? (Question Mark) </p></li>
+<li><p>: (Colon)</p></li>
+<li><p>&quot; (Double Quote)</p></li>
+<li><p>/ (Forward Slash)</p></li>
+<li><p>\ (Back Slash)</p></li>
+<li><p>| (Veritcal Bar)</p></li>
+<li><p>* (Asterisk)</p></li>
+<li><p>&lt; (Less Than)</p></li>
+<li><p>&gt; (Greater Than)</p></li>
+</ul>
+<h2 id='create-script'>Create Script</h2><h3 id='save-and-load-blocks'>Save and Load Blocks</h3>
+<p>Save Workspace to file and load Workspace from file</p>
+
+<p><strong>Save Blocks</strong>: Saves current Workspace to a file.</p>
+
+<p><strong>Load Blocks</strong>: Loads Workspace from a file.</p>
+<h3 id='create-and-restore-snapshot'>Create and Restore Snapshot</h3>
+<p>Snapshot is all of the blocks in the current Workspace.</p>
+
+<p><strong>Create Snapshot</strong>: Saves current state of workspace.</p>
+
+<p><strong>Restore Snapshot</strong>: Restores the previous snapshot and corresponding code. </p>
+<h2 id='view-your-code'>View your Code</h2>
+<p>To display code created by current block Workspace, click Code tab.</p>
+
+<p>Click Workspace to return to block view.</p>
+<h1 id='introduction'>Introduction</h1>
+<p>This is the documentation for the Picrafty API. Each block and its
+corresponding python code is documented here.  </p>
+
+<p>This API is based around three classes given in the Raspberry Juice mod used to control the minecraft game world inside Python scripts</p>
+
+<ol>
+<li>Minecraft --- Main class for connecting to and interacting with the game.<br></li>
+<li>Player --- Getting and changing a player&#39;s position and settings.<br></li>
+<li>Entity --- Getting and changing an entity&#39;s position and settings.<br></li>
+</ol>
+
+<p>This documentation is a spin-off of documentation for Raspberry Juice found at: <strong>https://www.stuffaboutcode.com/p/minecraft-api-reference.html</strong>  </p>
+<h1 id='minecraft'>Minecraft</h1><h2 id='get-block'>Get Block</h2>
+<p>Retrieve block type located at Position variable</p>
+
+<p><img src="images/GetBlock.png" alt="Get block" width="250" height="100"/></p>
+<h2 id='get-blocks'>Get Blocks</h2>
+<p>Get all block IDs ranging from one position to another</p>
+
+<p><img src="images/GetBlocks.png" alt="Get multiple blocks" width="250" height="100"/></p>
+<h2 id='get-block-type-and-id'>Get Block Type and ID</h2>
+<p>Get the block Type and corresponding ID</p>
+
+<p><img src="images/GetBlockWithData.png" alt="Get block with data" width="250" height="100"/></p>
+<h2 id='set-block'>Set Block</h2>
+<p>Sets a block at a Position variable to a particular type</p>
+
+<p><img src="images/SetBlock.png" alt="Set block" width="250" height="150"/></p>
+<h2 id='set-blocks'>Set Blocks</h2>
+<p>Set many blocks at a time, filling the gap between 2 sets of Position variables</p>
+
+<p><img src="images/SetBlocks.png" alt="Set multiple blocks" width="250" height="200"/></p>
+<h2 id='get-height'>Get Height</h2>
+<p>Find the y(vertical) of an x, z coordinate which represents the highest (non-air) block.</p>
+
+<p><img src="images/GetHeight.png" alt="Get height" width="250" height="100"/></p>
+<h2 id='get-player-entity-ids'>Get Player Entity IDs</h2>
+<p>Get the entity IDs of the players connected to the game.</p>
+
+<p><img src="images/GetPlayerIds.png" alt="Get IDs of players in game" width="250" height="85"/></p>
+<h2 id='get-player-id'>Get Player ID</h2>
+<p>Get the entity ID of a player</p>
+
+<p><img src="images/GetPlayerID.png" alt="Get a player's ID" width="250" height="85"/></p>
+<h2 id='post-to-chat'>Post to Chat</h2>
+<p>Writes the message to the chat window</p>
+
+<p><img src="images/PostToChat.png" alt="Post message to chat" width="250" height="100"/></p>
+<h1 id='player'>Player</h1><h2 id='get-player-39-s-position'>Get Player&#39;s Position</h2>
+<p>Outputs player&#39;s current position.</p>
+
+<p><img src="images/GetPlayerPos.png" alt="Get player position" width="250" height="125"/></p>
+<h2 id='set-player-39-s-position'>Set Player&#39;s Position</h2>
+<p>Change player&#39;s current location to a new position</p>
+<h3 id='input'>Input</h3>
+<p>Position variable</p>
+
+<p><img src="images/SetPlayerPos.png" alt="Set player position" width="250" height="100"/></p>
+<h2 id='get-tile-position'>Get Tile Position</h2>
+<p>Output: Position of tile coordinates.</p>
+
+<p><img src="images/GetPosUnderPlayer.png" alt="Get tile position" width="250" height="100"/></p>
+<h2 id='set-tile-position'>Set Tile Position</h2>
+<p>Input: Position variable</p>
+
+<p><img src="images/SetPlayersPosOnTopOf.png" alt="Set player's position to tile" width="250" height="100"/></p>
+<h2 id='get-player-39-s-rotation'>Get Player&#39;s Rotation</h2>
+<p>Output: Rotation angle as float</p>
+
+<p><img src="images/GetPlayersAngleOfRotation.png" alt="Get player's angle of rotation" width="250" height="100"/></p>
+<h2 id='get-player-39-s-pitch'>Get Player&#39;s Pitch</h2>
+<p>Output: Pitch angle as float</p>
+
+<p><img src="images/GetPlayersPitch.png" alt="Get player's angle of pitch" width="250" height="100"/></p>
+<h2 id='get-player-39-s-direction'>Get Player&#39;s Direction</h2>
+<p>Output: Player direction as Position variable</p>
+
+<p><img src="images/GetPlayersDirection.png" alt="Get player's direction" width="250" height="100"/></p>
+<h1 id='position'>Position</h1>
+<p><img src="images/PositionModify.png" alt="Modify position" width="400" height="100"/></p>
+<h1 id='entity'>Entity</h1><h2 id='get-entity-39-s-position'>Get Entity&#39;s Position</h2>
+<p>Input: Entity ID (can get using mc.getPlayerIds())</p>
+
+<p><img src="images/GetEntitysPos.png" alt="Get entity's position" width="350" height="100"/></p>
+<h2 id='set-entity-39-s-position'>Set Entity&#39;s Position</h2>
+<p>Input: Entity ID (can get using mc.getPlayerIds())</p>
+
+<ul>
+<li>Position variable</li>
+</ul>
+
+<p><img src="images/SetEntityPos.png" alt="Set entity's position" width="350" height="100"/></p>
+<h2 id='get-position-of-tile-underneath-entity'>Get Position of Tile Underneath Entity</h2>
+<p>Input: Entity ID</p>
+
+<p>Output: Position variable of the tile that an entity is on</p>
+
+<p><img src="images/GetPosDirectlyUnderEntity.png" alt="Get position of tile under entity" width="350" height="100"/></p>
+<h2 id='set-new-position-underneath-entity'>Set New Position Underneath Entity</h2>
+<p>Input: 
+* Entity ID</p>
+
+<ul>
+<li>Position variable</li>
+</ul>
+
+<p><img src="images/SetNewPositionUnderEntity.png" alt="Set entity's new position" width="450" height="100"/></p>
+<h2 id='get-entity-39-s-rotation'>Get Entity&#39;s Rotation</h2>
+<p>Input: Entity ID</p>
+
+<p>Output: Entity rotation angle</p>
+
+<p><img src="images/GetEntitysRotation.png" alt="Get entity's rotation" width="350" height="100"/></p>
+<h2 id='get-entity-39-s-pitch'>Get Entity&#39;s Pitch</h2>
+<p>Input: Entity ID</p>
+
+<p>Output: Entity Pitch Angle</p>
+
+<p><img src="images/GetEntitysPitch.png" alt="Get entity's pitch" width="350" height="100"/></p>
+<h2 id='get-entity-39-s-direction'>Get Entity&#39;s Direction</h2>
+<p>Input: Entity ID</p>
+
+<p>Output: Position variable of entity direction</p>
+
+<p><img src="images/GetEntitysDirection.png" alt="Get entity's position" width="350" height="100"/></p>
+<h1 id='block'>Block</h1><h2 id='modify-block'>Modify Block</h2>
+<p>Input: Takes block variable</p>
+
+<p>Output: New block type</p>
+
+<p><img src="images/ModifyBlock.png" alt="Modifies block" width="400" height="100"/></p>
+
+      </div>
+      <div class="dark-box">
+      </div>
+    </div>
+  </body>
+</html>

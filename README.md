@@ -1,12 +1,12 @@
 # What you'll need
-1. Windows (preferably Windows 10)
+1. Windows 10 or macOS Mojave (or latest version)
 2. Minecraft Java Edition Version 1.12.2
-3. Minecraft Forge Client (single-player) Version 1.12.2
-4. Java version 8
-5. RaspberryJam Minecraft Mod
-6. Python 3
+3. Java version 8
+4. Python 3
+5. Minecraft Forge Client (single-player) Version 1.12.2
+6. RaspberryJam Minecraft Mod
 7. Node.js
-8. Internet connection (for cdn packages)
+8. Google Chrome web browser (preferred) and an internet connection (for cdn packages)
 
 # Setup Minecraft
 1. Install Minecraft on target machine
@@ -18,10 +18,10 @@
 ![Step 1.4](public/media/readme_images/step1-4.png)
 
 4. Click the version dropdown
-![Step 1.2](public/media/readme_images/step1-3.png)
+![Step 1.2](public/media/readme_images/step1-2.png)
 
 5. Select version 1.12.2
-![Step 1.3](public/media/readme_images/step1-2.png)
+![Step 1.3](public/media/readme_images/step1-3.png)
 
 6. Click Create to save the new installation
 ![Step 1.5](public/media/readme_images/step1-5.png)
@@ -53,9 +53,11 @@
 7. Click Download Zip
 ![Step 2.6](public/media/readme_images/step2-6.png)
 
-8. Extract the contents of the raspberry jam mod zip to c:\Users\*YOUR USERNAME*\AppData\Roaming\.minecraft 
+8. Extract the contents of the raspberry jam mod zip to c:\Users\YOUR USERNAME\AppData\Roaming\minecraft 
+![Step 2.7](public/media/readme_images/step2-7.png)
+![Step 2.8](public/media/readme_images/step2-8.png)
 
-9. There will now be a mods.zip file in the .minecraft folder. Extract the contents of this in to the .minecraft\mods folder 
+9. There will now be a mods.zip file in the .minecraft folder. Extract the contents of this in to the .minecraft\ folder 
 
 10. Using the Minecraft Launcher, launch the 1.12.2 Forge version of minecraft. 
 

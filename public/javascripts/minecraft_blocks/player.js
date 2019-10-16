@@ -16,7 +16,7 @@ Blockly.defineBlocksWithJsonArray([
         "type": "player_get_position",
         "message0": "Get players position.",
         "output": "Vector",
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "tooltip": "Gets players position in the world. Returns coordinates as vector.",
         "helpUrl": ""
     },
@@ -33,7 +33,7 @@ Blockly.defineBlocksWithJsonArray([
         ],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "extensions": ["empty_input_warning"],
         "tooltip": "Moves player to provided position.",
         "helpUrl": ""
@@ -43,7 +43,7 @@ Blockly.defineBlocksWithJsonArray([
         "type": "player_get_tile_position",
         "message0": "Get position under player.",
         "output": "Vector",
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "tooltip": "",
         "helpUrl": ""
     },  
@@ -60,7 +60,7 @@ Blockly.defineBlocksWithJsonArray([
         ],
         "previousStatement": null,
         "nextStatement": null,
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "extensions": ["empty_input_warning"],
         "tooltip": "Move player on top of tile at provided position.",
         "helpUrl": ""
@@ -70,7 +70,7 @@ Blockly.defineBlocksWithJsonArray([
         "type": "player_get_direction",
         "message0": "Get players direction.",
         "output": "Vector",
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "tooltip": "Get players direction. Returns a vector object.",
         "helpUrl": ""
     },
@@ -79,7 +79,7 @@ Blockly.defineBlocksWithJsonArray([
         "type": "player_get_rotation",
         "message0": "Get players angle of rotation.",
         "output": "Number",
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "tooltip": "Get the angle of players rotation.",
         "helpUrl": ""
     },
@@ -88,7 +88,7 @@ Blockly.defineBlocksWithJsonArray([
         "type": "player_get_pitch",
         "message0": "Get players pitch.",
         "output": "Number",
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 30,
         "tooltip": "Gets the players pitch",
         "helpUrl": ""
     }

@@ -56,7 +56,7 @@ Blockly.defineBlocksWithJsonArray([
     "nextStatement": null,
     "mutator" : "dynamic_dropdown_mutator",
     "extensions" : ["dd_on_change"],
-    "colour": '%{BKY_MINECRAFT_HUE}',
+    "colour": 0,
     "tooltip": "Change the type and sup-type of a provided block object.",
     "helpUrl": ""
   }

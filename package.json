@@ -1,9 +1,9 @@
 {
-  "name": "Pycraft",
+  "name": "pycraft",
   "version": "1.0.0",
   "description": "Server and client bundle for Pycraft application",
   "private": true,
-  "author": "Richie Burch, Matt Hardin, Nathan Robertson",
+  "author": "Richie Burch, Matt Hardin, Nathan Robertson, Matthew Deberry, Tanner Russell",
   "license": "APACHE 2.0",
   "main": "./bin/www.js",
   "scripts": {

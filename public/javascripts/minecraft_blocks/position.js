@@ -1,5 +1,5 @@
 // FILE: position.js
-// AUTHOR: Richie Burch
+// AUTHOR: Richie Burch, Matthew Deberry, Tanner Russell
 // PURPOSE: Implement google_blocks to manipulate position(vector) variables.
 
 // JSON Array for block definitions
@@ -111,7 +111,7 @@ Blockly.defineBlocksWithJsonArray([
         "inputsInline": true,
         "previousStatement": null,
         "nextStatement": null,
-        "colour": '%{BKY_MINECRAFT_HUE}',
+        "colour": 60,
         "extensions": ["empty_input_warning"],
         "tooltip": "Modify attributes of a position variable. Keep + 0 to leave an attribute unchanged.",
         "helpUrl": ""

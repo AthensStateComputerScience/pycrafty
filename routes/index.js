@@ -1,5 +1,5 @@
 // FILE: index.js
-// AUTHORS: Richie Burch, Nathan Robertson
+// AUTHORS: Richie Burch, Nathan Robertson, Matthew Deberry, Tanner Russell, Matthew Deberry, Tanner Russell
 // PURPOSE: Detects various GET and POST requests and performs appropriate actions on them.
 
 

@@ -1,5 +1,5 @@
 // FILE: menuBar.js
-// AUTHORS: Justin Erickson, Richie Burch, Matt Hardin, Nathan Robertson
+// AUTHORS: Justin Erickson, Richie Burch, Matt Hardin, Nathan Robertson, Matthew Deberry, Tanner Russell
 // PURPOSE: Controls behavior of the toolbar. Most functions in this file are triggered upon an event happening.
 
 const PREAMBLE = "from mine import *\n\n" +

@@ -1,5 +1,5 @@
 // FILE: minecraft.js
-// AUTHOR: Richie Burch; Nathan Robertson
+// AUTHOR: Richie Burch; Nathan Robertson, Matthew Deberry, Tanner Russell
 // PURPOSE: Implement google_blocks for all methods found in the Minecraft class
 
 

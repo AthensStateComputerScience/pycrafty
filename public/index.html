@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<!-- Authors: Justin Erickson, Richie Burch, Matt Hardin, Nathan Robertson -->
+<!-- Authors: Justin Erickson, Richie Burch, Matt Hardin, Nathan Robertson, Matthew Deberry, Tanner Russell -->
 <html>
 <head>
     <meta charset="utf-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Generated Favicon at: https://www.favicon-generator.org/ -->
-    <!-- TODO: Replace temporary favicon -->
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 
@@ -15,6 +13,7 @@
 
     <link rel="stylesheet" href="stylesheets/style.css">
     <link rel="stylesheet" href="stylesheets/picnic.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap/dist/css/bootstrap.css">
 
     <!-- Blockly source code. WARNING: These three files must be above the other files -->
     <script src="javascripts/blockly_compressed.js"></script>
@@ -51,6 +50,7 @@
     <label for="bmenub" class="burger pseudo button">menu</label>
 
     <div class="menu">
+        
         <input id="fileNameTextBox" type="text" placeholder="File name" maxlength="100">
         <a href="#" class="pseudo button" id="generateButton" onclick="createScript()">Create Script</a>
         <a href="#" class="pseudo button" id="exportButton" onclick="saveBlocks()">Save Blocks</a>
@@ -60,6 +60,7 @@
                style="display: none;"/>
         <a href="#" class="pseudo button" id="createSnapshotButton" onclick="createSnapshot()">Create Snapshot</a>
         <a href="#" class="pseudo button" id="restoreSnapshotButton" onclick="restoreSnapshot()">Restore Snapshot</a>
+        <a href="tutorial.html" class="pseudo button" target="_blank">Tutorial</a>
     </div>
 
 </nav>
@@ -162,6 +163,7 @@
         <block type="logic_null"></block>
         <block type="logic_ternary"></block>
     </category>
+    
     <category name="Loops" colour='%{BKY_LOOPS_HUE}'>
         <block type="controls_repeat_ext">
             <value name="TIMES">
@@ -198,6 +200,7 @@
             <field name="FLOW">BREAK</field>
         </block>
     </category>
+    
     <category name="Math" colour='%{BKY_MATH_HUE}'>
         <block type="math_number">
             <field name="NUM">0</field>
@@ -298,6 +301,7 @@
         </block>
         <block type="math_random_float"></block>
     </category>
+    
     <category name="Text" colour='%{BKY_TEXTS_HUE}'>
         <block type="post_to_chat"></block>
         <block type="text">
@@ -377,6 +381,7 @@
             </value>
         </block>
     </category>
+    
     <category name="Lists" colour='%{BKY_LISTS_HUE}'>
         <block type="lists_create_with">
             <mutation items="0"></mutation>
@@ -427,6 +432,7 @@
     </category>
 
     <category name="Variables" colour='%{BKY_VARIABLES_DYNAMIC_HUE}' custom="VARIABLE_DYNAMIC"></category>
+    
     <category name="Functions" colour='%{BKY_VARIABLES_DYNAMIC_HUE}'>
         <block type="procedures_defreturn">
             <field name="NAME" colour="#A65C81"></field>
@@ -436,6 +442,7 @@
 
         <block type="procedures_ifreturn" colour="#A65C81"></block>
     </category>
+    
 </xml>
 
 

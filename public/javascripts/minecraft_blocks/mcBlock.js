@@ -1,5 +1,5 @@
 // FILE: mcBlock.js
-// AUTHOR: Nathan Robertson, Richie Burch
+// AUTHOR: Nathan Robertson, Richie Burch, Matthew Deberry, Tanner Russell
 // PURPOSE: Code to display and generate minecraft blocks
 
 

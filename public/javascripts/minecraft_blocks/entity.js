@@ -1,5 +1,5 @@
 // FILE: entity.js
-// AUTHOR: Matt Hardin, Nathan Robertson, Richie Burch
+// AUTHOR: Matt Hardin, Nathan Robertson, Richie Burch, Matthew Deberry, Tanner Russell
 // PURPOSE: Implement google_blocks to map to Minecraft().entity methods.
 
 // JSON Block Layout

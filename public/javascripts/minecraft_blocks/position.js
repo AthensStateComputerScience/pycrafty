@@ -1,5 +1,5 @@
 // FILE: position.js
-// AUTHOR: Richie Burch
+// AUTHOR: Richie Burch, Matthew Deberry, Tanner Russell
 // PURPOSE: Implement google_blocks to manipulate position(vector) variables.
 
 // JSON Array for block definitions

@@ -1,5 +1,5 @@
 // FILE: player.js
-// AUTHOR: Richie Burch; Nathan Robertson
+// AUTHOR: Richie Burch; Nathan Robertson, Matthew Deberry, Tanner Russell
 // PURPOSE: Implement google_blocks for all methods in the Minecraft.Player class
 
 

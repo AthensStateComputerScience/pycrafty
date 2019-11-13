@@ -1,0 +1,28 @@
+/* Tutorial style sheet */
+
+body {
+  position: relative;
+}
+
+/* Navbar */
+
+.navbar-brand {
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+.mynav {
+  border-bottom: 2px solid transparent;
+}
+
+.mynav a:hover {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.active a {
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+
+.belowNav {
+  padding-top: 70px;
+}

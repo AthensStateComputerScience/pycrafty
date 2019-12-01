@@ -1,4 +1,8 @@
 <!doctype html>
+<!--Used for blockly defintions: https://developers.google.com/blockly -->
+<!--Used for Python definitions: https://www.python.org/doc -->
+<!--Used for Minecraft definitions: https://education.minecraft.net/how-it-works/what-is-minecraft -->
+<!--Used for Minecraft Forge definitions: https://minecraft.gamepedia.com/Mods/Forge -->
 <html lang="en">
   <head>
     <!-- Required meta tags -->
@@ -8,106 +12,438 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="stylesheets/customTut.css">
+    <link rel="stylesheet" href="stylesheets/getStarted-print.css">
+    <!-- Tab Icon -->
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
 
-    <title>Pycraft Tutorial</title>
+    <title>Pycraft-Tutorial</title>
   </head>
   <body data-spy="scroll" data-target="#navbarNav">
 
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light mynav">
-        <a class="navbar-brand" href="#" ><img src="../documentation/images/logo.png" style="width:25px;height:25px;"></a>
+    <nav class="navbar navbar-expand-sm navbar-light fixed-top bg-light mynav">
+        <a class="navbar-brand disabled py-0" href="#" >Pycraft</a>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav justify-content-around" style="width:100%">
+
             <li class="nav-item">
-              <a class="nav-link" href="#section1">Part 1 <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#section1">Overview <span class="sr-only">(current)</span></a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#section2">Part 2</a>
+              <a class="nav-link" href="#section2">Get Started</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link" href="#section3">Part 3</a>
+              <a class="nav-link" href="#section3">Blocks</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#section4">Part 4</a>
+                <a class="nav-link" href="#section4">Examples</a>
             </li>
+
             <li class="nav-item">
-                <a class="nav-link" href="#section5">part 5</a>
+                <a class="nav-link" href="#section5">Print Here</a>
             </li>
+
           </ul>
         </div>
       </nav>
 
+      <div id="" class="container-fluid belowNav">
+          <h1 align="center">Welcome to Pycraft!</h1>
+      </div>
+
       <div id="section1" class="container-fluid belowNav">
-        <h1>Section 1</h1>
-        <p>Based on Marvel Comics' superhero character, this is a story of Peter Parker who is 
-          a nerdy high-schooler. He was orphaned as a child, bullied by jocks, and can't confess 
-          his crush for his stunning neighborhood girl Mary Jane Watson. To say his life is "miserable" 
-          is an understatement. But one day while on an excursion to a laboratory a runaway radioactive 
-          spider bites him... and his life changes in a way no one could have imagined. Peter acquires a 
-          muscle-bound physique, clear vision, ability to cling to surfaces and crawl over walls, shooting 
-          webs from his wrist ... but the fun isn't going to last. An eccentric millionaire Norman Osborn 
-          administers a performance enhancing drug on himself and his maniacal alter ego Green Goblin 
-          emerges. Now Peter Parker has to become Spider-Man and take Green Goblin to the task... or else
-           Goblin will kill him. They come face to face and the war begins in which only one of them will 
-           survive at the end.</p>
+        <h2>Overview</h2>
+          <p>
+              Pycraft is a research project to help investigate the psychology of programming. Particularly 
+              in age groups such as middle-schoolers, high-schoolers, and college students. Pycraft gathers the 
+              analytics of the different age groups and determines the differences in how they go about solving 
+              different programming problems.
+              <br>
+              <h5>Pycraft is composed of the following components:</h5>
+              <ul>
+                <li>Blockly</li>
+                <li>Python</li>
+                <li>Minecraft</li>
+                <li>Minecraft Forge</li>
+                <li>RaspberryJam Mods</li>
+              </ul>
+              <h4>Blockly</h4>
+              <ul>
+                <h5>What is it?</h5>
+                  Blockly is a library that adds a visual code editor to web and mobile apps. The Blockly editor uses 
+                  interlocking, graphical blocks to represent code concepts like variables, logical expressions, loops, 
+                  and more. It allows users to apply programming principles without having to worry about syntax or the 
+                  intimidation of a blinking cursor on the command line.
+              </ul>
+              <ul>
+                <h5>How did Pycraft use it?</h5>
+                  Blockly is the main UI component in Pycraft. Used for its visual programming capabilities.
+              </ul>
+              <h4>Python</h4>
+              <ul>
+                <h5>What is it?</h5>
+                Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. 
+                Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it 
+                very attractive for Rapid Application Development, as well as for use as a scripting or glue language
+                to connect existing components together.  
+              </ul>
+              <ul>
+                <h5>How did Pycraft use it?</h5>
+                While using symantics of the visual Blockly blocks, these generate syntactically correct user-generated Python scripts.
+                These scripts are then saved and ran inside of Minecraft.     
+              </ul>
+              <h4>Minecraft</h4>
+              <ul>
+                <h5>What is it?</h5>
+                An open-world game that promotes creativity, collaboration, and problem-solving in an immersive environment where the only 
+                limit is your imagination.
+              </ul>
+              <ul>
+                <h5>How does Pycraft use it?</h5>
+                Minecraft is one of the main driving componets of Pycraft. While by itself Minecraft has endless 
+                creative possibilites. Pycraft takes advantage of this and helps the users learn programming while
+                playng Minecraft. The generated Python scripts are ran in the text box inside of Minecraft.
+              </ul>
+              <h4>Minecraft Forge</h4>
+              <ul>
+                <h5>What is it?</h5>
+                Is a free, open-source modding API and loader designed to simplify compatibility between 
+                community-created game mods in Minecraft: Java Edition. The end-user (player) must play the version 
+                of Minecraft that Forge was downloaded for before it can be used. For example, Forge 1.12 will need 
+                the 1.12 version of Minecraft in order to run correctly. Forge can then be used from the Play 
+                drop-down in the Minecraft launcher.
+
+              </ul>
+              <ul>
+                <h5>How does Pycraft use it?</h5>
+                The Minecraft Forge API is used to bridge the gap in connecting the RaspberryJam Mods to work inside
+                of Minecraft.
+              </ul>
+              <h4>RaspberryJam Mods</h4>
+              <ul>
+                <h5>What is it?</h5>
+                Mods that use the Minecraft API and allow for Minecraft to be controlled by Python code.
+              </ul>
+              <br>
+              <br> 
+          </p>
+      </div>
+
       <div id="section2" class="container-fluid">
-      <h1>Section 2</h1>
-        <p>
-            On a school field trip, Peter Parker (Maguire) is bitten by a genetically modified spider. He 
-            wakes up the next morning with incredible powers. After witnessing the death of his uncle 
-            (Robertson), Parkers decides to put his new skills to use in order to rid the city of evil, but 
-            someone else has other plans. The Green Goblin (Dafoe) sees Spider-Man as a threat and must 
-            dispose of him. Even if it means the Goblin has to target Parker's Aunt (Harris) and the girl 
-            he secretly pines for (Dunst)
-        </p>
+        <h2>Get Started</h2>
+          <p>
+            <h5>Components in Menu Bar:</h5>
+            <ul>
+              <li>File Name</li>
+              <li>Create Script</li>
+              <li>Save Blocks</li>
+              <li>Load Blocks</li>
+              <li>Create Snapshot</li>
+              <li>Restore Snapshot</li>
+              <li>Tutorial</li>
+            </ul>
+            <ul>
+              <h5>File Name</h5>
+              Enter the name of your script. The following characters are prohibited
+              (? : &quot / \ | * &lt &gt).
+              <br>
+              <br>
+              <img src="media/getStarted_images/Filename.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Create Script</h5>
+              After creating a filename click on 'Create Script' to save it in the script library.
+              <br>
+              <br>
+              <img src="media/getStarted_images/CreateScript.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Save Blocks</h5>
+              Saves current workspace to a file.
+              <br>
+              <br>
+              <img src="media/getStarted_images/SaveBlocks.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Load Blocks</h5>
+              Loads workspace from a file.
+              <br> 
+              <br>
+              <img src="media/getStarted_images/LoadBlocks.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Create Snapshot</h5>
+              Saves current state of the workspace.
+              <br>
+              <br>
+              <img src="media/getStarted_images/CreateSnap.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Restore Snapshot</h5>
+              Restores the previous snapshot and corresponding code. 
+              <br>
+              <br>
+              <img src="media/getStarted_images/RestoreSnap.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Tutorial</h5>
+              Takes you to the tutorial page in a separate tab.
+              <br>
+              <br>
+              <img src="media/getStarted_images/Tutorial.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Workspace</h5>
+              This is the block view of the users work. 
+              <br>
+              <br>
+              <img src="media/getStarted_images/Workspace.png" width="800" height="75"/>
+            </ul>
+            <ul>
+              <h5>Code</h5>
+              This displays the code that has been created with the blocks.
+              <br>
+              <br>
+              <img src="media/getStarted_images/Code.png" width="800" height="75"/>
+            </ul>
+            <br>
+            <br>
+          </p>
       </div>
+
       <div id="section3" class="container-fluid">
-        <h1>Section 3</h1>
-        <p>
-            Peter Parker (Tobey Maguire) is a nerdy high school senior in New York City. His parents are 
-            dead and he lives with his Uncle Ben (Cliff Robertson) and Aunt May (Rosemary Harris). He has a
-             crush on his next door neighbor, Mary Jane Watson (Kirsten Dunst), who is also one of the few 
-             classmates who is nice to him. Her boyfriend, Flash (Joe Manganiello) and his buddies pick on 
-             him. Peter's only friend is Harry Osborn (James Franco), who, though rich and good-looking, is 
-             milarly an outcast. Harry, however, is somewhat jealous of the affection his father, Norman 
-             (Willem Dafoe) shows Peter. Norman, the head of weapons contractor Oscorp, appreciates Peter's 
-             scientific aptitude and can barely conceal his desire that Peter was his own son
-        </p>
+        <h2>Blocks</h2>
+          <p>
+            <ul>
+              <h4>Minecraft Blocks</h4>
+              <ul>
+                <h5>Modify Block</h5>
+                Input: Takes block variable
+                <br>
+                Output: New block type
+                <br>
+                <br>
+                <img src="media/blocks_images/ModifyBlock.png" width="250" height="50"/>
+              </ul>
+              <ul>
+                <h5>Set Block</h5>
+                Sets a block at a position variable to a particular type.
+                <br>
+                <br>
+                <img src="media/blocks_images/SetSingleBlock.png" width="200" height="100"/>
+              </ul>
+              <ul>
+                <h5>Set Blocks</h5>
+                Set many blocks at a time, filling the gap between 2 sets of position 
+                variables.
+                <br>
+                <br>
+                <img src="media/blocks_images/SetBlocks.png" width="200" height="100"/>
+              </ul>
+              <ul>
+                <h5>Get Block</h5>
+                Returns block type located at position variable.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetBlock.png" width="125" height="50"/>
+              </ul>
+              <ul>
+                <h5>Get Block Type and ID </h5>
+                Returns the block type and corresponding ID.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetBlockTP.png" width="200" height="50"/>
+              </ul>
+              <ul>
+                <h5>Get List of Block Types </h5>
+                Returns all block IDs ranging from one position to another.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetListBlock.png" width="200" height="75"/>
+              </ul>
+              <ul>
+                <h5>Get Height </h5>
+                Returns the y coordinate of an x/z coordinate which represents the highest
+                (non-air) block.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetHeight.png" width="125" height="50"/>
+              </ul>
+            </ul>
+
+            <ul>
+              <h4>Player Blocks</h4>
+              <ul>
+                <h5>Get Player ID </h5>
+                 Returns the entity ID of a player.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayerID.png" width="125" height="35"/>
+              </ul>
+              <ul>
+                <h5>Get Player IDs </h5>
+                  Returns the entity IDs of all players connected to the game.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayerIDs.png" width="125" height="40"/>
+              </ul>
+              <ul>
+                <h5>Get Player Position </h5>
+                  Returns player's current position.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayerPos.png" width="140" height="40"/>
+              </ul>
+              <ul>
+                <h5>Set Player Position </h5>
+                Sets the location of a player to the position variable 'y'.
+                <br>
+                <br>
+                <img src="media/blocks_images/SetPlayerPos.png" width="175" height="40"/>
+              </ul>
+              <ul>
+                <h5>Get Position Under Player </h5>
+                Returns the position of the block under player.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPosUnder.png" width="175" height="40"/>
+              </ul>
+              <ul>
+                <h5>Get Players Direction</h5>
+                Returns the direction of player as a position variable.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayersDir.png" width="175" height="40"/>
+              </ul>
+              <ul>
+                <h5>Get Players Angle of Rotation</h5>
+                Returns the rotation angle as a float variable.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayersAngle2.png" width="175" height="40"/>
+              </ul>
+              <ul>
+                <h5>Get Players Pitch</h5>
+                Returns the pitch angle as a float variable.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPlayersPitch.png" width="175" height="40"/>
+              </ul>
+            </ul>
+            <ul>
+                <h4>Position Blocks</h4>
+                <ul>
+                  <h5>Position</h5>
+                  Modifies the current position 'x' to a user defined position.
+                  <br>
+                  <br>
+                  <img src="media/blocks_images/ModifyPos.png" width="300" height="50"/>
+                 </ul>
+            </ul>
+            <ul>
+              <h4>Entity Blocks</h4>
+              <ul>
+                <h5>Get Other Players Position</h5>
+                Returns the position of another player.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPosOtherPlayer.png" width="175" height="40"/>
+              </ul>
+              <ul>
+                <h5>Set Entity's Position</h5>
+                Uses a position variable to set 'x' to 'y'.
+                <br>
+                <br>
+                <img src="media/blocks_images/SetPosOf.png" width="175" height="40"/>
+               </ul>
+               <ul>
+                <h5>Get Position Under Player</h5>
+                Returns the position underneath another player.
+                <br>
+                <br>
+                <img src="media/blocks_images/GetPosUnder2.png" width="175" height="40"/>
+                </ul>
+                <ul>
+                  <h5>Get Rotation of Another Player</h5>
+                  Returns the roation of another player as a float.
+                  <br>
+                  <br>
+                  <img src="media/blocks_images/GetRotationOfOTherPlayer.png" width="175" height="40"/>
+                </ul>
+                <ul>
+                  <h5>Get Pitch of Another Player</h5>
+                  Returns the pitch of another player as a float.
+                  <br>
+                  <br>
+                  <img src="media/blocks_images/GetPitchOfAnotherPlayer.png" width="175" height="40"/>
+                </ul>
+              </ul>
+              <br>
+              <br>
+          </p>
       </div>
+
       <div id="section4" class="container-fluid">
-        <h1>Section 4</h1>
-        <p>
-            Peter wakes up the next morning feeling better than ever. He also learns his scrawny physique 
-            now ripples with muscles and his eyesight is perfect. At school that day, he learns he can shoot 
-            webs out of spinnerettes in his wrists. He demonstrates his own new agility by catching Mary Jane 
-            and her food tray when she slips at lunch and then beating an enraged Flash in a fistfight. That 
-            night, he and Mary Jane casually flirt across the fence separating their backyards, although Flash 
-            aks this up when he arrives with his new car. Peter believes he needs a car to impress Mary Jane 
-            but knows ne
-        </p>
+        <h2>Examples</h2>
+          <p>
+            <ul>
+              <h4>Pycraft Examples</h4>
+              ** All examples are ran in Pycraft via "/lpy filename.py" inside of
+              the chat box **
+              <ul>
+                <h5>Example 1</h5>
+                Prints out "Hello, Minecraft World!" three times.
+                <br>
+                <br>
+                <img src="media/blocks_images/Example1.png" width="300" height="150"/>
+              </ul>
+              <ul>
+                <h5>Example 2</h5>
+                This moves the Minecraft character 5 spaces in 'x' direction and 3 
+                spaces in the 'y' direction 4 times. Notice, the 'z' direction (height)
+                stays at 20 and the last 2 iterations of the loop does not do anything.
+                <br>
+                <br>
+                <img src="media/blocks_images/Example2.png" width="450" height="350"/>
+              </ul>
+    
+            </ul>
+            <br>
+            <br>
+          </p>
       </div>
 
-      <div id="section5" class="container-fluid">
-        <h1>Section 5</h1>
-        <p>
-            Peter wakes up the next morning feeling better than ever. He also learns his scrawny physique now 
-            ripples with muscles and his eyesight is perfect. At school that day, he learns he can shoot webs 
-            out of spinnerettes in his wrists. He demonstrates his own new agility by catching Mary Jane and 
-            her food tray when she slips at lunch and then beating an enraged Flash in a fistfight. That night, 
-            he and Mary Jane casually flirt across the fence separating their backyards, although Flash breaks 
-            this up when he arrives with his new car. Peter believes he needs a car to impress Mary Jane but 
-            knows
-        </p>
+      <div id="section5" class="container-fluid center">
+        <div class="container center" id="box">
+          <div class="row well center">
+              <button type="button" class="btn btn-info btn-lg hidden-print" onclick="printFunction()">
+                <span class="fa fa-print" aria-hidden="true"></span> Print</button>  
+          </div>
         </div>
+      </div>
 
-    <!-- Optional JavaScript -->
+      <!-- Print function -->
+      <script>
+          function printFunction() {
+            window.print();
+          }
+      </script>
+
+    <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Used for print icon -->
+    <script src="https://use.fontawesome.com/9a9bc948fb.js"></script>
     <!-- Scrollspy -->
-    <script>$('body').scrollspy({ target: '#navbarNav', offset:65})</script>
+    <script>$('body').scrollspy({ target: '#navbarNav', offset:50})</script>
   </body>
 </html>

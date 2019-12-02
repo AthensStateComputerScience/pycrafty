@@ -163,17 +163,17 @@ to run the script in Minecraft.
     * picnic CSS: https://picnicss.com/
     
  # (Optional) Create a User Database
- Download XAMPP for the OS version that is being used at https://www.apachefriends.org/index.html
+ 1. Download XAMPP for the OS version that is being used at https://www.apachefriends.org/index.html
  
- Start MySQL using the XAMMP Control Panel Application that is located in the XAMPP folder.
+ 2. Start MySQL using the XAMMP Control Panel Application that is located in the XAMPP folder.
  
- Navigate to http://Localhost and click the PHPMyAdmin icon in the top right.
+ 3.  Navigate to http://Localhost and click the PHPMyAdmin icon in the top right.
  
- On the left hand toolbar, create a new database name pycraft.
+ 4. On the left hand toolbar, create a new database name pycraft.
  
- Locate the sql command to create the users_t table that is located in the Pycraft/SQL/MySQLCommands.sql
+ 5. Locate the sql command to create the users_t table that is located in the Pycraft/SQL/MySQLCommands.sql
  
- Select the database and use the SQL command in the SQL query tab to add the table to the database.
+ 6. Select the database and use the SQL command in the SQL query tab to add the table to the database.
  
- Keep the database server running and now filling out the Sign Up Form will post the user data to the users_t table in the database.
+ 7. Keep the database server running and now filling out the Sign Up Form will post the user data to the users_t table in the database.
  

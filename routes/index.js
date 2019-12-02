@@ -9,7 +9,6 @@ const express = require('express');
 const validator = require('express-validator');
 let router = express.Router();
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('/public/index.html');
@@ -87,6 +86,44 @@ router.post(
         })
 );
 
+router.post(
+    '/submit-form',
+     asyncMiddleware(function (req, res, next) {
+		var mysql = require('mysql');
+		var bodyParser = require('body-parser');
+		var app = express();
+		app.use(bodyParser.json());
+		app.use(bodyParser.urlencoded({ extended: true}));
+		
+		let con = mysql.createConnection({
+			host: "localhost",
+			user: "root",
+			password: "",
+			database: "pycraft"
+		});
+		
+		const username = req.body.username;
+		const email = req.body.email;
+		const firstname = req.body.firstname;
+		const lastname = req.body.lastname;
+		const age = req.body.age;
+		const exp = req.body.exp;
+
+		con.connect(function(err) {
+			if (err) throw err;
+			let sql = "INSERT INTO users_t (uname, email, fname, lname, age, experience) VALUES ('"+username+"', '"+email+"', '"+firstname+"', '"+lastname+"', '"+age+"', '"+exp+"')";
+			con.query(sql, function (err, res) {
+				if (err) throw err;
+			});
+		});
+    })
+);
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+    res.render('/public/index.html');
+});
+
 /**
  * getFilePath: Returns correct file path for .minecraft/mcpipy folder
  * https://minecraft.gamepedia.com/.minecraft
@@ -98,6 +135,5 @@ function getFilePath(fileName) {
 function getFilePathMac(fileName) {
     return os.userInfo().homedir + "//Library//Application Support//minecraft//mcpipy//" + fileName + ".py";
 }
-
 
 module.exports = router;

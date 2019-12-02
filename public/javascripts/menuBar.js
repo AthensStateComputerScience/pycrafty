@@ -146,3 +146,33 @@ function addLoadEvent(xhttp) {
 function displaySuccessNotification(element, notificationText) {
     $(element).notify(notificationText, "success", NOTIFY_OPTIONS);
 }
+
+function signUp(){
+	let codeForm = new FormData();
+	var username = signup.uname.value;
+	var email = signup.email.value;
+	var firstname = signup.fname.value;
+	var lastname = signup.lname.value;
+	var age = signup.age.value;
+	var exp = signup.exp.value;
+	codeForm.append("username", username);
+	codeForm.append("email", email);
+	codeForm.append("firstname", firstname);
+	codeForm.append("lastname", lastname);
+	codeForm.append("age", age);
+	codeForm.append("exp", exp);
+    let xhttp = new XMLHttpRequest();
+	addLoadEvent(xhttp);
+    xhttp.open("POST", "/submit-form", true);
+	xhttp.send(codeForm);
+}
+
+// Get the modal
+var signUpModal = document.getElementById('signUpModal');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == signUpModal) {
+    signUpModal.style.display = "none";
+  }
+}

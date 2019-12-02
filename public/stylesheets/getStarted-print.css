@@ -1,0 +1,58 @@
+/* Style sheet for proper web printing*/
+
+@media print {
+ 
+  #content, #page {
+  width: 100%; 
+  margin: 0; 
+  float: none;
+  }
+  #box {
+    display: none;
+  }
+     
+  @page { margin-top: 2.54cm; margin-bottom: 2.54cm; margin-right: 2.54cm;
+          margin-left: 2.54cm }
+  
+  body {
+  font-family: 13pt "Times New Roman", Times, serif;
+  line-height: 1.3;
+  background: #fff !important;
+  color: #000;
+  }
+  
+  h1 {
+  font-size: 24pt;
+  }
+  
+  h2, h3 {
+  font-size: 20pt;
+  }    
+
+  h4 {
+    font-size: 16pt;
+  }
+   
+  a {
+      page-break-inside:avoid
+  }
+  blockquote {
+      page-break-inside: avoid;
+  }
+  h1, h2, h3, h4, h5, h6 { page-break-after:avoid; 
+       page-break-inside:avoid }
+  img { page-break-inside:avoid; 
+       page-break-after:avoid; }
+  table, pre { page-break-inside:avoid }
+  ul, ol, dl  { page-break-before:avoid }
+
+  #header-widgets, nav, aside.mashsb-container, 
+  .sidebar, .mashshare-top, .mashshare-bottom, 
+  .content-ads, .make-comment, .author-bio, 
+  .heading, .related-posts, #decomments-form-add-comment, 
+  #breadcrumbs, #footer, .post-byline, .meta-single, 
+  .site-title img, .post-tags, .readability 
+  {
+  display: none;
+  }
+  }

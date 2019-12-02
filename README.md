@@ -162,7 +162,7 @@ to run the script in Minecraft.
     * bootstrap.js
     * picnic CSS: https://picnicss.com/
     
- 11.(Optional) Create a User Database
+ # (Optional) Create a User Database
  Download XAMPP for the OS version that is being used at https://www.apachefriends.org/index.html
  Start MySQL using the XAMMP Control Panel Application that is located in the XAMPP folder.
  Navigate to http://Localhost and click the PHPMyAdmin icon in the top right.

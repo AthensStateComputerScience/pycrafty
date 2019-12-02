@@ -87,6 +87,24 @@ router.post(
         })
 );
 
+router.post(
+    '/submit-form',
+    asyncMiddleware(function (req, res, next) {
+		console.log("Got to router.post");
+
+		con.connect(function(err) {
+			if (err) throw err;
+				console.log("Connected!");
+			var sql = "INSERT INTO users_t (uname, fname, lname, age, experience) VALUES ('test2', 'Newtest', 'Works', '1', 'none')";
+			con.query(sql, function (err, result) {
+				if (err) throw err;
+				console.log("1 record inserted");
+			});
+		});
+		
+    })
+);
+
 /**
  * getFilePath: Returns correct file path for .minecraft/mcpipy folder
  * https://minecraft.gamepedia.com/.minecraft
@@ -98,6 +116,5 @@ function getFilePath(fileName) {
 function getFilePathMac(fileName) {
     return os.userInfo().homedir + "//Library//Application Support//minecraft//mcpipy//" + fileName + ".py";
 }
-
 
 module.exports = router;

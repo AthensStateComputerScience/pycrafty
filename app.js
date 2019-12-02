@@ -6,6 +6,9 @@ var multer = require('multer');
 var upload = multer();
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mysql = require('mysql');
+var bodyParser = require('body-parser');
+
 
 var indexRouter = require('./routes/index');
 
@@ -22,6 +25,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(upload.array());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true}));
 
 app.use('/', indexRouter);
 
@@ -41,6 +46,11 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-
+var con = mysql.createConnection({
+	host: "localhost",
+	user: "root",
+	password: "",
+	database: "pycraft"
+});
 
 module.exports = app;

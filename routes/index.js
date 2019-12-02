@@ -9,7 +9,6 @@ const express = require('express');
 const validator = require('express-validator');
 let router = express.Router();
 
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
     res.render('/public/index.html');
@@ -89,21 +88,41 @@ router.post(
 
 router.post(
     '/submit-form',
-    asyncMiddleware(function (req, res, next) {
-		console.log("Got to router.post");
+     asyncMiddleware(function (req, res, next) {
+		var mysql = require('mysql');
+		var bodyParser = require('body-parser');
+		var app = express();
+		app.use(bodyParser.json());
+		app.use(bodyParser.urlencoded({ extended: true}));
+		
+		let con = mysql.createConnection({
+			host: "localhost",
+			user: "root",
+			password: "",
+			database: "pycraft"
+		});
+		
+		const username = req.body.username;
+		const email = req.body.email;
+		const firstname = req.body.firstname;
+		const lastname = req.body.lastname;
+		const age = req.body.age;
+		const exp = req.body.exp;
 
 		con.connect(function(err) {
 			if (err) throw err;
-				console.log("Connected!");
-			var sql = "INSERT INTO users_t (uname, fname, lname, age, experience) VALUES ('test2', 'Newtest', 'Works', '1', 'none')";
-			con.query(sql, function (err, result) {
+			let sql = "INSERT INTO users_t (uname, email, fname, lname, age, experience) VALUES ('"+username+"', '"+email+"', '"+firstname+"', '"+lastname+"', '"+age+"', '"+exp+"')";
+			con.query(sql, function (err, res) {
 				if (err) throw err;
-				console.log("1 record inserted");
 			});
 		});
-		
     })
 );
+
+/* GET home page. */
+router.get('/', function(req, res, next) {
+    res.render('/public/index.html');
+});
 
 /**
  * getFilePath: Returns correct file path for .minecraft/mcpipy folder

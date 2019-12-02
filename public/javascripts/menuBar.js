@@ -148,21 +148,23 @@ function displaySuccessNotification(element, notificationText) {
 }
 
 function signUp(){
+	let codeForm = new FormData();
 	var username = signup.uname.value;
 	var email = signup.email.value;
 	var firstname = signup.fname.value;
 	var lastname = signup.lname.value;
 	var age = signup.age.value;
-	var exp = signup.exp.value;*/
-	console.log(username);
-	console.log(email);
-	console.log(firstname);
-	console.log(lastname);
-	console.log(age);
-	console.log(exp);
+	var exp = signup.exp.value;
+	codeForm.append("username", username);
+	codeForm.append("email", email);
+	codeForm.append("firstname", firstname);
+	codeForm.append("lastname", lastname);
+	codeForm.append("age", age);
+	codeForm.append("exp", exp);
     let xhttp = new XMLHttpRequest();
+	addLoadEvent(xhttp);
     xhttp.open("POST", "/submit-form", true);
-	xhttp.send(null);
+	xhttp.send(codeForm);
 }
 
 // Get the modal
